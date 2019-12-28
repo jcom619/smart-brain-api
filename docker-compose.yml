@@ -1,6 +1,8 @@
 version: "3.3"
 
 services:
+
+    # backend api
     smart-brain-api:
         container_name: backend
         build: ./
@@ -10,3 +12,9 @@ services:
             - "3000:3000"
         volumes:
             - ./:/usr/src/smart-brain-api
+            
+    # postgres
+    postgres:
+        image: postgres
+        ports:
+        - "5432:5432"
