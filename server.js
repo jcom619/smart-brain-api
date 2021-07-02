@@ -21,7 +21,7 @@ const db = knex({
 });
 
 const app = express();
-console.log("For creed and country!!");
+console.log("Margeret Thatcher?");
 
 app.use(morgan('combined'))
 app.use(cors())
@@ -35,5 +35,5 @@ app.put('/image', (req, res) => { image.handleImage(req, res, db)})
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)})
 
 app.listen(3000, ()=> {
-  console.log('app is running on port 3000');
+  console.log('Margeret Cho! is running on port 3000');
 })
